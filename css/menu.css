@@ -1,0 +1,300 @@
+/*Es un diseño responsive aunque puede que tenga detalles que no note. A si que puede acceder a el desde celular*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+
+/*Cabezera, titulo , eslogan y imagenes de cabezera*/
+header{
+    width: 100%;
+    padding-top: 30px ;
+    background-color: #d68189;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+h1{
+    /*border:2px solid black;*/
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 10px 0;
+    color:white;
+}
+h1 span:nth-child(1){
+    color:black;
+}
+
+/*Navegador superior e hijos*/
+nav{   
+    z-index: 2;/*Para que se superponga*/
+    background-color: #f4ead5;
+    overflow: hidden;
+    position: sticky;
+    top:0px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;  
+    scroll-snap-type: x mandatory;
+    white-space: nowrap; 
+    /*border-bottom: 1px solid cadetblue;*/
+    border-bottom: 1px solid #d68189;
+}
+/*Para movil*/
+@media (max-width: 768px) {
+    nav ul {
+        overflow-x: scroll;  /* Permite desplazamiento horizontal en móviles(El scroll) */
+        -webkit-overflow-scrolling: touch; /* Suaviza el scroll*/
+    }
+}
+nav li{
+    scroll-snap-align: center; 
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    
+}
+nav a{
+    font-size: 20px;
+    display: inline-flex;/*Combinacion de inline y flex*/
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+nav a:hover{ /*Para cuando pasen arriba de un enlace cambie de color*/
+    background-color: #E3ABB0;
+    color:white;
+}
+nav a:active  { /*Para cuando le den click enlace cambie de color*/
+    
+    background-color: #d68189;
+    color:white;
+    border:1px solid white;
+}
+/*Para los iconos de cada opcion del nav*/
+.iconos{ /*Propiedades en comun*/
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px;
+}
+/*Propiedades Individuales para cada icono del nav*/
+#ic-inicio{
+    background-image: url("../recursos/iconos/home-icon-silhouette.png");
+}
+#ic-menu{
+    background-image: url("../recursos/iconos/fast-food.png");
+}
+#ic-galeria{
+    background-image: url("../recursos/iconos/image-galery.png");
+}
+#ic-contacto{
+    background-image: url("../recursos/iconos/letter.png");
+}
+#ic-ubicacion{
+    background-image: url("../recursos/iconos/location.png");
+}
+#ic-promociones{
+    background-image: url("../recursos/iconos/discount.png");
+}
+#ic-pedidos{
+    background-image: url("../recursos/iconos/checkout.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Menu de platillos*/
+main{
+    border-radius: 40px;
+    margin: 30px 5px;
+    background-color: #f4ead5;
+}
+main *{/*Centrar todos los textos dentro del bloques*/
+    text-align: center;
+}
+main h2{
+    margin-top:20px;
+}
+.menu{   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.menu h2{
+    width: 100%;
+}
+.platillos{/*Clase en comun que comparte cada tarjeta de cada platillo*/
+    box-shadow: 0px 0px 10px 4px #d68189;
+    width: 24%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 20px 8px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.platillos p, .platillos button{
+    display: inline-block;
+}
+main img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+#img-enchiladas{ /*Algunas imagenes se tiene que posicionar hacia abajo para que se vea el producto*/
+    object-position: bottom;
+}
+#img-pastel{
+    object-position: bottom;
+}
+.platillos button{
+    background-color: #E3ABB0;
+    border: 1px solid #d68189; 
+    padding: 2px;
+}
+/*Agregar efectos a los botones para cuando pasen el cursor por encima y cuando le den clicks*/
+.platillos button:hover{
+    color: white;
+    background-color: #d68189;
+}
+.platillos button:active{
+    border: white;
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer e hijos*/
+footer{
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    background-color: #f4ead5;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding: 0 20px;
+ }
+ footer *{
+     text-align: center;
+ }
+ @media (max-width: 768px) {
+     footer {
+         overflow-x: scroll;  /* Permite desplazamiento horizontal en móviles(El scroll) */
+         -webkit-overflow-scrolling: touch; /* Suaviza el scroll*/
+     }
+ }
+ footer > div{  /*Los hijo directos de tipo div acomodaran a sus hijos con propiedades flex*/
+     width: 33%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding:10px 0;
+ }
+ footer > div:nth-child(1){
+     border-right: 2px solid #d68189;
+     align-items: center;
+     justify-content: flex-start;
+     padding-right:20px ;
+ }
+ footer > div:nth-child(2){
+     max-width: 45%;
+     min-width: 42%;
+     border-right: 2px solid #d68189;
+     align-items: center;
+     justify-content: flex-start;
+     
+ }
+ footer > div:nth-child(3){
+     align-items: center;
+     justify-content: flex-start;
+     padding-left:20px ;
+ }
+ footer ul{
+     list-style-type:none; 
+ }
+ footer p{
+     padding: 0 5px;
+ }
+ #ul-redes{/*Lista desordenada donde estan los iconos de redes sociales*/
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+ footer ul li{ 
+     margin: 6px 10px;
+     /*border: 1px solid black;*/
+     display: flex;
+ }
+ footer ul li a{ /*Quitar el subrayado de los links y agregar padding */
+     height: 100%;
+     text-decoration: none;
+     padding: 4px;
+     /*border: 1px solid red;*/
+ }
+ footer ul li a:hover{
+     background-color: #E3ABB0;
+ }
+ footer ul li a:active{
+     background-color: #d68189;
+ }
+ 
+ /*Iconos en foooter de contacto.*/
+ #ic-whats{
+     background-image: url("../recursos/iconos/whatsapp.png");
+ }
+ #ic-fb{
+     background-image: url("../recursos/iconos/social.png");
+ }
+ #ic-ig{
+     background-image: url("../recursos/iconos/new.png");
+ }
+ #ic-tel{
+     background-image: url("../recursos/iconos/phone-call.png");
+ }
+ #ic-tk{
+     background-image: url("../recursos/iconos/tiktok.png");
+ }
+

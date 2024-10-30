@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="css/index.css" rel="stylesheet">
+    <title>Flavor Haven</title>
+</head>
+<body>
+    
+
+
+    <header>
+        <h1><span>Flavor</span> <span>Haven</span> </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html"><i class ="iconos" id="ic-inicio"></i>Inicio</a></li>
+            <li><a href="./menu.html"><i class ="iconos" id="ic-menu"></i>Menu</a></li>
+            <li><a href="#"><i class ="iconos" id="ic-galeria"></i>Galeria</a></li>
+            <li><a href="#"><i class ="iconos" id="ic-promociones"></i>Promociones</a></li>
+            <li><a href="./pedidos.html" ><i class ="iconos" id="ic-pedidos"></i>Pedidos</a></li>
+            <li><a href="#ul-redes"><i class ="iconos" id="ic-contacto"></i>Contacto</a></li>
+            <li><a href="#" ><i class ="iconos" id="ic-ubicacion"></i>Ubicacion</a></li>
+        </ul>
+    </nav>
+
+
+    <!--La imagen principal la agrege con un div, la propiedad background-image y otras propiedades en css porque me es mas facil controlar las dimensiones de esa forma a diferencia de con una etiqueta img-->
+    <div class="restauranteImagenes"></div>
+    
+    
+   
+    
+    <!--MAIN contiene las tarjetitas de cada categoria-->
+    <main class="principal">
+        <h2>Nuestras categorias</h2>
+        <div class="categorias">
+            <div class="comida-italiana">
+                <a href="menu.html "></a>
+                <h3>Comida Italiana</h3>
+                <p class="comida-italiana-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis labore in omnis, id porro dignissimos consequatur itaque culpa ducimus. Sunt aliquam quod, quos maiores molestiae beatae veritatis iure dicta laboriosam.
+                </p>
+                <img alt="Pizza" class="img-pizza" src="./recursos/img/pizza.jpg">
+            </div>
+            <div class="comida-española">
+                <a href="menu.html "></a>
+                <h3>Comida Española</h3>
+                <p class="comida-española-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat optio vero provident similique, id consequuntur quam asperiores incidunt voluptate quia, accusantium odit magni eos quas. Accusamus voluptate dicta hic.
+                </p>
+                <img alt="paella" class="img-paella" src="./recursos/img/paella.jpg">
+            </div>
+            <div class="comida-mexicana">
+                <a href="menu.html "></a>
+                <h3>Comida Mexicana</h3>
+                <p class="comida-mexicana-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat optio vero provident similique, id consequuntur quam asperiores incidunt voluptate quia, accusantium odit magni eos quas. Accusamus voluptate dicta hic.
+                </p>
+                <img alt="Tacos de suadero" class="img-tacos" src="./recursos/img/tacos.jpg">
+            </div>
+            <!--
+            <div class="comida-postres">
+                <a href="menu.html "></a>
+                <h3>Postres</h3>
+                <p class="comida-postres-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat optio vero provident similique, id consequuntur quam asperiores incidunt voluptate quia, accusantium odit magni eos quas. Accusamus voluptate dicta hic.
+                </p>
+                <img alt="postres" class="img-postres" src="./recursos/img/postres.jpg">
+            </div>
+            <div class="comida-bebidas">
+                <a href="menu.html "></a>
+                <h3>Smoothies</h3>
+                <p class="comida-bebidas-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat optio vero provident similique, id consequuntur quam asperiores incidunt voluptate quia, accusantium odit magni eos quas. Accusamus voluptate dicta hic.
+                </p>
+                <img alt="bebidas" class="img-bebidas" src="./recursos/img/bebidas.jpg">
+            </div>
+            -->
+
+        </div>
+    </main>
+
+
+
+
+
+    <section>
+        <h3>OPINIONES</h3>
+        <div class="opiniones-contenedor ">
+            <!--Se repiten las etiquetas de la clase "opinion-contenedor" con algunas ligeras modificaciones -->
+            <div class="opinion-contenedor">
+                <div class="op-sup">
+                    <img alt="foto de perfil" class="img-op" src="recursos/img/ara.jpg">
+                    <div class="op-sup-r">
+                        <h4>Mauricio Guzman</h4>
+                        <p>Abogado</p>
+                    </div>
+                </div>
+                <div class="op_inf">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore illum, est ullam itaque, error repellat necessitatibus modi rerum iusto quis consequuntur animi provident? Tempora aliquid odit quod iure ullam.
+                    </p>
+                </div>
+            </div>
+            <div class="opinion-contenedor">
+                <div class="op-sup">
+                    <img alt="foto de perfil" class="img-op" src="recursos/img/mod.jpg">
+                    <div class="op-sup-r">
+                        <h4>Merab</h4>
+                        <p>Modelo</p>
+                    </div>
+                </div>
+                <div class="op_inf">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore illum, est ullam itaque, error repellat necessitatibus modi rerum iusto quis consequuntur animi provident? Tempora aliquid odit quod iure ullam.
+                    </p>
+                </div>
+            </div>
+            <div class="opinion-contenedor">
+                <div class="op-sup">
+                    <img alt="foto de perfil" class="img-op" src="recursos/img/mar.jpg">
+                    <div class="op-sup-r">
+                        <h4>Rachel Vera</h4>
+                        <p>Ingeniera Quimica</p>
+                    </div>
+                </div>
+                <div class="op_inf">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore illum, est ullam itaque, error repellat necessitatibus modi rerum iusto quis consequuntur animi provident? Tempora aliquid odit quod iure ullam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    
+  
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <h3>Recursos y Soporte</h3>
+            <ul>
+                <li><a target="_blank" href="./atribuciones.html">Atribuciones</a></li>
+                <li><a style="text-decoration: line-through;">Soporte</a></li>
+                <!--<li><a style="text-decoration: line-through;">Opiniones</a></li>-->
+                
+            </ul>
+        </div>
+        <div id="nosotros">
+            <h3>Nosotros</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere itaque quos magni, nisi libero fuga possimus harum perspiciatis repudiandae illo quam officiis recusandae accusamus. Quis blanditiis iusto dolorem perspiciatis!</p>
+        </div>
+        <div >
+            <h3>Contacto y Redes</h3>
+            <ul id="ul-redes">
+                <li><a><i id="ic-tel" class="iconos"></i></a></li>
+                <li><a  target="_blank" href="https://web.whatsapp.com/" ><i id="ic-whats" class="iconos"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><i id="ic-ig" class="iconos"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/"><i id="ic-fb" class="iconos"></i></a></li>
+                <li><a target="_blank" href="https://www.tiktok.com/es/"><i id="ic-tk" class="iconos"></i></a></li>
+            </ul>
+        </div>
+        
+
+        
+    </footer>
+
+</body>
+</html>
