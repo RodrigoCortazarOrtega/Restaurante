@@ -115,6 +115,9 @@ nav a:active  { /*Para cuando le den click enlace cambie de color*/
 #ic-pedidos{
     background-image: url("../recursos/iconos/checkout.png");
 }
+.cancelados{/*Para los enlaces de las paginas que no pidio*/
+    text-decoration: line-through;
+}
 
 
 

@@ -16,12 +16,12 @@
     <nav>
         <ul>
             <li><a href="./index.html"><i class ="iconos" id="ic-inicio"></i>Inicio</a></li>
-            <li><a href="#"><i class ="iconos" id="ic-menu"></i>Menu</a></li>
-            <li><a href="#"><i class ="iconos" id="ic-galeria"></i>Galeria</a></li>
+            <li><a href="./menu.html"><i class ="iconos" id="ic-menu"></i>Menu</a></li>
+            <li><a href="./galeria.html"><i class ="iconos" id="ic-galeria"></i>Galeria</a></li>
             <li><a href="#"><i class ="iconos" id="ic-promociones"></i>Promociones</a></li>
-            <li><a href="./pedidos.html" ><i class ="iconos" id="ic-pedidos"></i>Pedidos</a></li>
+            <li> <a class="cancelados"><i class ="iconos" id="ic-pedidos"></i>Pedidos</a></li>
             <li><a href="#ul-redes"><i class ="iconos" id="ic-contacto"></i>Contacto</a></li>
-            <li><a href="#" ><i class ="iconos" id="ic-ubicacion"></i>Ubicacion</a></li>
+            <li><a class="cancelados" ><i class ="iconos" id="ic-ubicacion"></i>Ubicacion</a></li>
         </ul>
     </nav>
 
@@ -32,7 +32,7 @@
     <main>
         
         <div class="menu"> <!--Los hijos de este bloque seran los platillos de todas las categorias-->
-            <h2>Menu</h2>
+            <h2>Platos Principales</h2>
             <div class="platillos suadero">
                 <img alt="Tacos Suadero" src="recursos/img/tacos.jpg" >
                 <h3>Tacos de Suadero</h3>
@@ -54,7 +54,7 @@
             <div class="platillos enfrijoladas">
                 <img alt="Enfrijoladas" src="recursos/img/enfrijoladas.jpg">
                 <h3>Enfrijoladas</h3>
-                <p>$55</p>
+                <p>Una orden $55</p>
                 <button>Agregar al carrito</button>
             </div>
             <div class="platillos pizza">
@@ -75,6 +75,13 @@
                 <p>Platillo individual $55</p>
                 <button>Agregar al carrito</button>
             </div>
+            <div class="platillos hamburguesa">
+                <img alt="Hamburguesa" src="recursos/img/hamburguesa.jpg">
+                <h3>Hamburguesa</h3>
+                <p>Hamburguesa $78</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <h2>Postres</h2>
             <div class="platillos hotcakes">
                 <img alt="hotcakes" src="recursos/img/hotcakes.jpg">
                 <h3>Hotcakes</h3>
@@ -87,12 +94,25 @@
                 <p>Rebanada $35</p>
                 <button>Agregar al carrito</button>
             </div>
-            <div class="platillos hamburguesa">
-                <img alt="Hamburguesa" src="recursos/img/hamburguesa.jpg">
-                <h3>Hamburguesa</h3>
-                <p>Hamburguesa $78</p>
+            <div class="platillos dona">
+                <img id="img-dona" alt="Dona" src="recursos/img/dona.jpg">
+                <h3>Dona Chocolate</h3>
+                <p>Una Dona $18</p>
                 <button>Agregar al carrito</button>
             </div>
+            <div class="platillos galletas">
+                <img alt="galletas" src="recursos/img/galletas.jpg">
+                <h3>Galletas Chocolate</h3>
+                <p>Una orden $35</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="platillos waffles">
+                <img alt="waffles" src="recursos/img/waffles.jpg">
+                <h3>Waffles</h3>
+                <p>Una orden $50</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <h2>Bebidas</h2>
             <div class="platillos limonada">
                 <img alt="Limonada" src="recursos/img/limonada.jpg">
                 <h3>Limonada</h3>
@@ -105,10 +125,16 @@
                 <p>$40</p>
                 <button>Agregar al carrito</button>
             </div>
-            <div class="platillos cade">
+            <div class="platillos cafe">
                 <img alt="cafe" src="recursos/img/cafe.jpg">
                 <h3>Cafe</h3>
                 <p>$30</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="platillos zumo">
+                <img alt="zumo" src="recursos/img/zumo.jpg">
+                <h3>Bebida de Naranja</h3>
+                <p>Un vaso $18</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -131,7 +157,10 @@
         </div>
         <div id="nosotros">
             <h3>Nosotros</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere itaque quos magni, nisi libero fuga possimus harum perspiciatis repudiandae illo quam officiis recusandae accusamus. Quis blanditiis iusto dolorem perspiciatis!</p>
+            <p>Materia: Programacion Web 1</p>
+            <p>FA</p>
+            <p>Quinto Semestre</p>
+            <p>Nombre: Rodrigo</p>
         </div>
         <div >
             <h3>Contacto y Redes</h3>
